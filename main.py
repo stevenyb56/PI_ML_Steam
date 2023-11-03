@@ -111,8 +111,8 @@ def UsersNotRecommend(anio: int):
 
     return retorno
 
-@app.get('/sentiment_analysis2/{anio}')
-def sentiment_analysis2( anio : int ):
+##@app.get('/sentiment_analysis2/{anio}')
+#def sentiment_analysis2( anio : int ):
     df_end5 = pd.read_csv('end5.csv')
 
     year = str(anio).strip()
@@ -127,7 +127,7 @@ def sentiment_analysis2( anio : int ):
     }
 
 @app.get('/recomendacion_juego/{id_game}')
-def recomendacion_juego(id_game):
+def recomendacion_juego(id_game: int ):
 
     id = int(id_game)  
     end6 = pd.read_csv('games_ml.csv')
