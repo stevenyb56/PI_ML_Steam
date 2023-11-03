@@ -40,7 +40,11 @@ Además, se llevaron a cabo tareas de limpieza de datos, como el rellenado de va
 
 Estas transformaciones y limpieza de datos se realizaron con el fin de mejorar el rendimiento de la API resultante. Para llevar a cabo todo este proceso, se hizo uso de la biblioteca Pandas.
 
-Puede obtener información detallada sobre el proceso ETL en los documentos titulados "2a_ETL_SteamGames.ipynb," "ETL australian_users_items," y "ETL australian_user_reviews."
+Los documentos de ETL estan aca: [ETL_steamGames](https://github.com/stevenyb56/PI_ML_Steam/blob/main/Notebooks/2a_ETL_SteamGames.ipynb), [ETL UsersItems](https://github.com/stevenyb56/PI_ML_Steam/blob/main/Notebooks/2b_ETL_UserItems.ipynb) y [ETL UserReviews](https://github.com/stevenyb56/PI_ML_Steam/blob/main/Notebooks/2c_ETL_UserReviews.ipynb).
+
+## Desarrollo de EDA
+
+- En la exploracion de los datos limpios se pudo establecer correlaciones entre las variables, identificar patrones y tendencias:, detectar valores atipicos
 
 ## Resultados
 
@@ -58,10 +62,6 @@ Los resultados están disponibles en un sitio de Render de acceso público, desd
 Se llevó a cabo un proceso de extracción, transformación y carga (ETL) de los tres conjuntos de datos proporcionados. Dos de estos conjuntos de datos estaban estructurados de manera anidada, lo que significa que contenían columnas con diccionarios o listas de diccionarios. Para abordar esto, se implementaron diversas estrategias con el fin de transformar las claves de esos diccionarios en columnas independientes. También se llevaron a cabo tareas de limpieza de datos, incluyendo el relleno de valores nulos en variables fundamentales para el proyecto, así como la eliminación de columnas con una alta cantidad de valores faltantes o que no contribuían significativamente al proyecto. Estas acciones se llevaron a cabo con el objetivo de optimizar el rendimiento de la API y considerando las restricciones de almacenamiento en la implementación. Para realizar estas transformaciones, se utilizó la biblioteca Pandas.
 
 Los detalles específicos del proceso ETL se encuentran disponibles en los documentos titulados "ETL output_steam_games," "ETL australian_users_items," y "ETL australian_user_reviews."
-
-
-
-
 
 
 
