@@ -75,4 +75,4 @@ Link de la Api
 
 Tenemos un video donde se muestra el funcionamiento de la API respondiendo a distintas consultas:
 
-* Link de Youtube: https://www.youtube.com/watch?v=NIOKhnZ9J7E&ab
+* Link de Youtube: https://www.youtube.com/watch?v
