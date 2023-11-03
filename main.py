@@ -6,7 +6,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 app = FastAPI()
-"""
+
 @app.get('/inicio')
 async def hola_mundo():
     return {'message': 'Hola Mundo!'}
@@ -111,8 +111,8 @@ def UsersNotRecommend(anio: int):
 
     return retorno
 
-@app.get('/sentiment_analysis2/{anio}')
-def sentiment_analysis2( anio : int ):
+@app.get('/sentiment_analysis/{anio}')
+def sentiment_analysis( anio : int ):
     df_end5 = pd.read_csv('end5.csv')
 
     year = str(anio).strip()
@@ -125,7 +125,7 @@ def sentiment_analysis2( anio : int ):
         'Negativo': comparar.Malo.to_list()[0],
         'Neutral': comparar.Neutral.to_list()[0]
     }
-""" 
+
 @app.get('/recomendacion_juego/{id_game}')
 def recomendacion_juego(id_game: int ):
 
