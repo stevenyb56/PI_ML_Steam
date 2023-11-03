@@ -63,43 +63,16 @@ En resumen, este enfoque utiliza la similitud del coseno para determinar qué ju
 
 El documento de ML se encuentra aca [Modelo ML](https://github.com/stevenyb56/PI_ML_Steam/blob/main/Notebooks/5_Modelo_recomendacion.ipynb)
 
-En el archivo main.py tenemos:
-
-* La creación de la API
-* La importación de las librerías necesarias
-* La importación de los distintos csv que utilizaremos
-* Las 7 funciones disponibles para ser consultadas mediante la API
-
-En el archivo requirements.txt tenemos la lista de las librerías a utilizar
-
-Los resultados están disponibles en un sitio de Render de acceso público, desde donde se pueden realizar las consultas
-
-Se llevó a cabo un proceso de extracción, transformación y carga (ETL) de los tres conjuntos de datos proporcionados. Dos de estos conjuntos de datos estaban estructurados de manera anidada, lo que significa que contenían columnas con diccionarios o listas de diccionarios. Para abordar esto, se implementaron diversas estrategias con el fin de transformar las claves de esos diccionarios en columnas independientes. También se llevaron a cabo tareas de limpieza de datos, incluyendo el relleno de valores nulos en variables fundamentales para el proyecto, así como la eliminación de columnas con una alta cantidad de valores faltantes o que no contribuían significativamente al proyecto. Estas acciones se llevaron a cabo con el objetivo de optimizar el rendimiento de la API y considerando las restricciones de almacenamiento en la implementación. Para realizar estas transformaciones, se utilizó la biblioteca Pandas.
-
-Los detalles específicos del proceso ETL se encuentran disponibles en los documentos titulados "ETL output_steam_games," "ETL australian_users_items," y "ETL australian_user_reviews."
-
-
-
-
-## Desarrollo de EDA
-
-- Explorar los datos limpios para establecer correlaciones entre las variables.
-
 
 
 ## Enlaces
 
-Tenemos disponibles todos los archivos ipynb, txt, py, csv necesarios en el siguiente repositorio de GITHUB:
 
-* https://github.com/Jeremias44/Proyecto_Individual_1.git
+* https://github.com/stevenyb56/PI_ML_Steam
 
-Tenemos disponible un sitio en Render para realizar las consultas mencionadas en la introducción:
-
-* Sitio principal: https://consultas-steam-jeremias-pombo.onrender.com/
-
-* Sitio de consultas: https://consultas-steam-jeremias-pombo.onrender.com/docs
+Link de la Api
+* https://steam-api-s5zr.onrender.com/docs#/default/recomendacion_juego_recomendacion_juego__id_game__get
 
 Tenemos un video donde se muestra el funcionamiento de la API respondiendo a distintas consultas:
 
-* Link de Youtube: https://www.youtube.com/watch?v=NIOKhnZ9J7E&ab_channel=JEREM%C3%8DASPOMBO
-
+* Link de Youtube: https://www.youtube.com/watch?v=NIOKhnZ9J7E&ab
