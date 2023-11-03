@@ -30,7 +30,7 @@ Las consultas a desarrollar son las siguientes:
 6) def recomendacion_juego( id de producto ): Ingresando el id de producto, deberíamos recibir una lista con 5 juegos recomendados similares al ingresado.
 
 
-## Desarrollo y arquitectura
+## Desarrollo
 
 Inicialmente, tenemos tres archivos .JSON:
 
@@ -59,7 +59,7 @@ El documento EDA se encuentra aca [EDA](https://github.com/stevenyb56/PI_ML_Stea
 EL documento Ajuste se encuentra aca [EDA](https://github.com/stevenyb56/PI_ML_Steam/blob/main/Notebooks/4_Ajustes_API.ipynb)
 
 
-### Modelo de aprendizaje automático
+### Modelo de aprendizaje 
 
 - El modelo de ML se basa en una relación ítem-ítem, lo que significa que toma un juego en particular y, a partir de qué tan similar es ese juego con otros juegos en el conjunto de datos, recomienda otros juegos que son considerados similares. Esta recomendación se logra aplicando una métrica de similitud llamada "similitud del coseno". El cálculo de similitud del coseno permite medir cuán parecidos son dos juegos en función de sus características o atributos, como género, tema, características del juego, etc. Cuanto más cercano a 1 sea el valor del coseno, más similar se considera un juego a otro.
 
