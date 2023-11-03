@@ -2,6 +2,7 @@ from fastapi import FastAPI
 import pandas as pd
 import numpy as np
 import pickle
+from sklearn.metrics.pairwise import cosine_similarity
 
 
 app = FastAPI()
