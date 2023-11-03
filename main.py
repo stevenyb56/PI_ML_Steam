@@ -7,9 +7,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 app = FastAPI()
 
-@app.get('/inicio')
-async def hola_mundo():
-    return {'message': 'Hola Mundo!'}
+@app.get('/')
+def saludo():
+    return {'message': 'Hola! Bienvendi@ a la  API de consultas Steam'}
+
 
 @app.get('/PlayTimeGenre/{genero}')
 def PlayTimeGenre(genero: str):
