@@ -76,7 +76,8 @@ Link de Github
 * https://github.com/stevenyb56/PI_ML_Steam
 
 Link de la Api
-* https://steam-api-s5zr.onrender.com/docs#/default/recomendacion_juego_recomendacion_juego__id_game__get
+* https://steam-api-s5zr.onrender.com/docs
 
 Link del video
+
 *
