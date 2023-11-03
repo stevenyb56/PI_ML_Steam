@@ -67,12 +67,12 @@ El documento de ML se encuentra aca [Modelo ML](https://github.com/stevenyb56/PI
 
 ## Enlaces
 
+Link de Github 
 
 * https://github.com/stevenyb56/PI_ML_Steam
 
 Link de la Api
 * https://steam-api-s5zr.onrender.com/docs#/default/recomendacion_juego_recomendacion_juego__id_game__get
 
-Tenemos un video donde se muestra el funcionamiento de la API respondiendo a distintas consultas:
-
-* Link de Youtube: https://www.youtube.com/watch?v
+Link del video
+*
