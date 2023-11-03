@@ -8,7 +8,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 app = FastAPI()
 
 @app.get('/')
-def saludo():
+async def saludo():
     return {'message': 'Hola! Bienvendi@ a la  API de consultas Steam'}
 
 
