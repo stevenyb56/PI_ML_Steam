@@ -17,6 +17,7 @@ Los Dataset tienen en comun la columna id o item_id el cual es el identificador 
 Es necesario crear una API que pueda responder a diversas consultas utilizando los datos de STEAM relacionados con usuarios, reseñas y videojuegos.
 
 Las consultas a desarrollar son las siguientes:
+
 1) def PlayTimeGenre( genero : str ): Debe devolver año con mas horas jugadas para dicho género.
 2) def UserForGenre( genero : str ): Debe devolver el usuario que acumula más horas jugadas para el género dado y una lista de la acumulación de horas jugadas por año.
 3) def UsersRecommend( año : int ): Devuelve el top 3 de juegos MÁS recomendados por usuarios para el año dado. (reviews.recommend = True y comentarios positivos/neutrales)
@@ -44,9 +45,23 @@ Los documentos de ETL estan aca: [ETL_steamGames](https://github.com/stevenyb56/
 
 ## Desarrollo de EDA
 
-- En la exploracion de los datos limpios se pudo establecer correlaciones entre las variables, identificar patrones y tendencias:, detectar valores atipicos
+- En la exploracion de los datos limpios se pudo establecer correlaciones entre las variables, identificar patrones y tendencias:, detectar valores atipicos.
 
-## Resultados
+El documento EDA se encuentra aca [EDA](https://github.com/stevenyb56/PI_ML_Steam/blob/main/Notebooks/3_EDA.ipynb)
+
+### Ajustes para la API
+
+- Para habilitar las consultas, se implementó una solución consistente en generar archivos .csv más pequeños que pudieran ser consumidos por el web framework FastAPI. Esto resultó esencial debido a las restricciones de recursos en las versiones gratuitas tanto de FastAPI como de Render, una plataforma utilizada para alojar y desplegar aplicaciones en la nube.
+EL documento Ajuste se encuentra aca [EDA](https://github.com/stevenyb56/PI_ML_Steam/blob/main/Notebooks/4_Ajustes_API.ipynb)
+
+
+### Modelo de aprendizaje automático
+
+- El modelo de ML se basa en una relación ítem-ítem, lo que significa que toma un juego en particular y, a partir de qué tan similar es ese juego con otros juegos en el conjunto de datos, recomienda otros juegos que son considerados similares. Esta recomendación se logra aplicando una métrica de similitud llamada "similitud del coseno". El cálculo de similitud del coseno permite medir cuán parecidos son dos juegos en función de sus características o atributos, como género, tema, características del juego, etc. Cuanto más cercano a 1 sea el valor del coseno, más similar se considera un juego a otro.
+
+En resumen, este enfoque utiliza la similitud del coseno para determinar qué juegos son similares entre sí y, por lo tanto, cuáles pueden ser recomendados a los usuarios en función de sus preferencias y del juego que están explorando o jugando en ese momento.
+
+El documento de ML se encuentra aca [Modelo ML](https://github.com/stevenyb56/PI_ML_Steam/blob/main/Notebooks/5_Modelo_recomendacion.ipynb)
 
 En el archivo main.py tenemos:
 
