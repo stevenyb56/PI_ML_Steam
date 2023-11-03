@@ -11,6 +11,10 @@ Los datos proporcionados se encuentran comprimidos y en formato Json, cada Datas
 
 Los Dataset tienen en comun la columna id o item_id el cual es el identificador unico para cada juego, con este dato se podria relacionar los Datasets.
 
+- Fuente de Datos
+
+[Datasets](https://drive.google.com/drive/folders/1HqBG2-sUkz_R3h1dZU5F2uAzpRn7BSpj)
+
 ## API de Sistema de consultas y recomendaciones de juego.
 
 
